@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awards & Recognition — IEEE BBDITM (STB10214)</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .award-card-detailed {
+      background: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 1.5rem;
+      padding: 1.75rem;
+      box-shadow: 0 4px 20px rgba(0, 40, 85, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+    }
+    .award-card-detailed:hover {
+      border-color: var(--primary-blue);
+      box-shadow: 0 12px 30px rgba(0, 98, 155, 0.15);
+      transform: translateY(-3px);
+    }
+    .gallery-thumb-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 1.25rem;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .gallery-thumb-card:hover {
+      border-color: var(--primary-blue);
+      box-shadow: 0 8px 24px rgba(0, 98, 155, 0.12);
+      transform: translateY(-2px);
+    }
+    .page-btn {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.75rem;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-weight: 700;
+      font-family: monospace;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .page-btn.active {
+      background: var(--primary-navy);
+      color: #ffffff;
+      border-color: var(--primary-navy);
+      box-shadow: 0 4px 10px rgba(0, 40, 85, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOP NOTIFICATION ================= -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="badge-tag">STB10214</span>
+        <span class="announcement-text">
+          Verified Honors & Institutional Accolades • IEEE Uttar Pradesh Section Recognized
+        </span>
+      </div>
+      <div class="announcement-right">
+        <span>Region 10 (Asia-Pacific)</span>
+        <span>•</span>
+        <a href="https://ieeeup.org/" target="_blank" rel="noopener noreferrer">Section Records ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STICKY NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand-logo" title="BBDITM & IEEE Student Branch (STB10214)">
+          <div class="logo-badge">
+            <img src="images/bbditm-logo.png" alt="BBDITM Official Logo">
+          </div>
+          <div class="logo-badge">
+            <img src="images/branch-logo.png" alt="IEEE BBDITM Logo">
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="societies.html" class="nav-link">Societies</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="awards.html" class="nav-link active">Awards</a>
+          <button type="button" class="nav-link open-contact-btn">Contact</button>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="nav-controls">
+          <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-label">Dark</span>
+          </button>
+          <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            Join IEEE
+          </a>
+          <button id="mobileMenuBtn" class="icon-btn mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div id="mobileDrawer" class="mobile-drawer">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="societies.html" class="nav-link">Societies</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="awards.html" class="nav-link active">Awards</a>
+        <button type="button" class="nav-link open-contact-btn" style="text-align: left;">Contact Counselor</button>
+        <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-primary" style="justify-content: center; margin-top: 0.5rem;">Join on ieee.org</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main style="padding-top: 6rem;">
+    
+    <!-- Page Header & Quick Resource Links -->
+    <section class="section-py" style="border-bottom: 1px solid var(--border-color); background: var(--bg-secondary);">
+      <div class="container">
+        
+        <!-- Breadcrumbs -->
+        <div style="font-size: 0.8rem; font-family: monospace; color: var(--text-muted); margin-bottom: 0.75rem;">
+          <a href="index.html" style="color: var(--primary-blue); font-weight: 700;">Home</a> » 
+          <span style="color: var(--primary-navy); font-weight: 800;">Awards & Recognition</span>
+        </div>
+
+        <div class="pill-badge">Official Awards & Recognition Dossier</div>
+        <h1 class="hero-heading" style="font-size: 2.75rem;">Awards & Recognition</h1>
+        <p class="hero-desc">
+          Official institutional awards, IEEE India Council national trophies, Section honors, and individual volunteer distinctions earned by IEEE BBDITM Student Branch (STB10214).
+        </p>
+
+        <!-- Official IEEE External Portal Links -->
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-top: 1rem; font-size: 0.8rem; font-weight: 600;">
+          <span style="font-weight: 800; color: var(--primary-navy);">IEEE Resources:</span>
+          <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue);">IEEE.org ↗</a>
+          <span>•</span>
+          <a href="http://ieeexplore.ieee.org/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue);">IEEE Xplore Digital Library ↗</a>
+          <span>•</span>
+          <a href="http://standards.ieee.org/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue);">IEEE Standards ↗</a>
+          <span>•</span>
+          <a href="http://spectrum.ieee.org/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue);">IEEE Spectrum ↗</a>
+          <span>•</span>
+          <a href="https://ieeeup.org/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue);">IEEE UP Section ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D ROTATING CIRCULAR AWARDS SHOWCASE -->
+    <section class="section-py" style="background: radial-gradient(circle at center, rgba(0, 98, 155, 0.08) 0%, transparent 70%);">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <div class="pill-badge" style="display: inline-flex;">3D Interactive Carousel</div>
+          <h2 class="section-title">Orbiting Awards & Honors Ring</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Interactive 3D circular carousel rotating through official branch award certificates and posters. Hover to pause the orbit.
+          </p>
+        </div>
+
+        <div class="carousel-3d-wrap">
+          <div id="awardCarousel" class="carousel-3d">
+            
+            <!-- Award 1 -->
+            <div class="award-item">
+              <div class="card-img-box" style="margin-bottom: 0.75rem; aspect-ratio: 16/10; background: #071322;">
+                <img src="images/awards/award-india-council-branch-poster.png" alt="Outstanding Student Branch 2023" style="object-fit: contain;">
+              </div>
+              <span class="award-tag">INDIA COUNCIL 2023</span>
+              <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0;">Outstanding Student Branch 2023</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                Received from IEEE INDIA Council in Hyderabad honoring branch excellence.
+              </p>
+            </div>
+
+            <!-- Award 2 -->
+            <div class="award-item">
+              <div class="card-img-box" style="margin-bottom: 0.75rem; aspect-ratio: 16/10; background: #071322;">
+                <img src="images/awards/award-india-council-branch-cert.jpg" alt="Official Branch Certificate" style="object-fit: contain;">
+              </div>
+              <span class="award-tag">OFFICIAL CERTIFICATE</span>
+              <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0;">Council Award Certificate</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                Presented on 15th Dec 2023 during IEEE India Council Awards Night at Hyderabad.
+              </p>
+            </div>
+
+            <!-- Award 3 -->
+            <div class="award-item">
+              <div class="card-img-box" style="margin-bottom: 0.75rem; aspect-ratio: 16/10; background: #071322;">
+                <img src="images/awards/award-hitansh-volunteer-poster.jpg" alt="Outstanding Volunteer 2023" style="object-fit: contain;">
+              </div>
+              <span class="award-tag">VOLUNTEER HONOR</span>
+              <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0;">Outstanding Student Volunteer 2023</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                Awarded to Mr. Hitansh Dwivedi from IEEE India Council.
+              </p>
+            </div>
+
+            <!-- Award 4 -->
+            <div class="award-item">
+              <div class="card-img-box" style="margin-bottom: 0.75rem; aspect-ratio: 16/10; background: #071322;">
+                <img src="images/awards/award-hitansh-volunteer-cert.png" alt="Volunteer Certificate" style="object-fit: contain;">
+              </div>
+              <span class="award-tag">OFFICIAL CERTIFICATE</span>
+              <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0;">Volunteer Award Certificate</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                Official certificate presented to Hitansh Dwivedi in Hyderabad.
+              </p>
+            </div>
+
+            <!-- Award 5 -->
+            <div class="award-item">
+              <div class="card-img-box" style="margin-bottom: 0.75rem; aspect-ratio: 16/10; background: #071322;">
+                <img src="images/awards/award-best-branch-up-section-cert.jpg" alt="Best Student Branch UP Section" style="object-fit: contain;">
+              </div>
+              <span class="award-tag">UP SECTION CERTIFICATE</span>
+              <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0;">Best Student Branch in UP Section</h4>
+              <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                Framed certificate awarded at IEEE UP Section AGM at IIIT Allahabad.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAJOR AUTHENTIC AWARDS & RECOGNITIONS ================= -->
+    <section class="section-py" style="border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <div class="pill-badge">Documented Milestones</div>
+          <h2 class="section-title">Major Branch Honors & Institutional Recognitions</h2>
+          <p class="section-subtitle">
+            Verifiable awards received by IEEE BBDITM from the IEEE India Council, IEEE Uttar Pradesh Section, and Region 10.
+          </p>
+        </div>
+
+        <div class="card-grid-2">
+
+          <!-- 1. Outstanding Student Branch 2023 (IEEE India Council) -->
+          <div class="award-card-detailed">
+            <div>
+              <div class="card-img-box" style="aspect-ratio: 16/11; margin-bottom: 1rem; cursor: pointer; background: #071322;" onclick="openAwardLightbox('images/awards/award-india-council-branch-poster.png', 'OUTSTANDING STUDENT BRANCH OF THE YEAR 2023 , IEEE INDIA COUNCIL', 'National Council Honor', 'The IEEE BBDITM Student Branch on receiving the “Outstanding Student Branch of the Year Award 2023” from the IEEE INDIA Council.')">
+                <img src="images/awards/award-india-council-branch-poster.png" alt="Outstanding Student Branch of the Year 2023" style="object-fit: contain;">
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-family: monospace; font-size: 0.75rem; font-weight: 800; color: var(--primary-blue); text-transform: uppercase;">
+                  National Council Honor • 2023
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,40,85,0.08); padding: 0.2rem 0.5rem; border-radius: 0.3rem; font-weight: 800; color: var(--primary-navy);">
+                  IEEE INDIA COUNCIL
+                </span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.3;">
+                OUTSTANDING STUDENT BRANCH OF THE YEAR 2023 , IEEE INDIA COUNCIL
+              </h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                Awarding Body: IEEE INDIA Council (Received at Hyderabad)
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                The IEEE BBDITM Student Branch on receiving the “Outstanding Student Branch of the Year Award 2023” from the IEEE INDIA Council.<br><br>
+                Earning this prestigious recognition highlights hard work of the student branch members. It’s a testament to their commitment to organizing outstanding events and providing invaluable opportunities for growth and development to their members.<br><br>
+                Acknowledging the efforts of the Branch Counselor and the Chair IEEE Student Branch, who went to Hyderabad to receive the award, as well as expressing gratitude to the Hon’ble Chairperson of BBDEG for their support, truly emphasizes the collaborative effort and leadership that contributed to this success. I would like to also thank to Director, BBDITM and IEEE UP section Chair for their guidance and support at every moment. It inspires other student branches to follow suit and make a positive difference in the world through the application of engineering and technology. Well done on this outstanding achievement!
+              </p>
+            </div>
+            <div style="border-top: 1px solid var(--border-color); padding-top: 0.75rem; font-size: 0.75rem; color: #16a34a; font-weight: 700; display: flex; justify-content: space-between;">
+              <span>✓ Verified National Award</span>
+              <span style="color: var(--text-muted); font-family: monospace;">STB10214</span>
+            </div>
+          </div>
+
+          <!-- 2. Outstanding Student Volunteer 2023 (IEEE India Council) -->
+          <div class="award-card-detailed">
+            <div>
+              <div class="card-img-box" style="aspect-ratio: 16/11; margin-bottom: 1rem; cursor: pointer; background: #071322;" onclick="openAwardLightbox('images/awards/award-hitansh-volunteer-poster.jpg', 'OUTSTANDING STUDENT VOLUNTEER OF THE YEAR 2023 , IEEE INDIA COUNCIL', 'Volunteer Honor', 'Congratulations to Mr. Hitansh Dwivedi and the entire IEEE BBDITM Student Branch on this outstanding achievement!')">
+                <img src="images/awards/award-hitansh-volunteer-poster.jpg" alt="Outstanding Student Volunteer of the Year 2023" style="object-fit: contain;">
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-family: monospace; font-size: 0.75rem; font-weight: 800; color: var(--primary-blue); text-transform: uppercase;">
+                  Student Volunteer Honor • 2023
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,40,85,0.08); padding: 0.2rem 0.5rem; border-radius: 0.3rem; font-weight: 800; color: var(--primary-navy);">
+                  MR. HITANSH DWIVEDI
+                </span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.3;">
+                OUTSTANDING STUDENT VOLUNTEER OF THE YEAR 2023 , IEEE INDIA COUNCIL
+              </h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                Awarding Body: IEEE INDIA Council
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                Congratulations to Mr. Hitansh Dwivedi and the entire IEEE BBDITM Student Branch on this outstanding achievement! It’s a testament to their dedication and commitment to the engineering community.<br><br>
+                Recognition like the “Outstanding Student Volunteers of the Year Award 2023” from the IEEE INDIA Council celebrates dedication being acknowledged and celebrated. Kudos to the Branch Counselor, the Chair IEEE Student Branch, and everyone involved for their hard work. The support from the Hon’ble Chairperson of BBDEG is invaluable in fostering such remarkable achievements. I would like to also thank to Director, BBDITM and IEEE UP section Chair for their guidance and support at every moment. This award ceremony not only honors the recipients but also highlights the significance of community service in the engineering domain. Keep up the fantastic work.
+              </p>
+            </div>
+            <div style="border-top: 1px solid var(--border-color); padding-top: 0.75rem; font-size: 0.75rem; color: #16a34a; font-weight: 700; display: flex; justify-content: space-between;">
+              <span>✓ Verified Volunteer Distinction</span>
+              <span style="color: var(--text-muted); font-family: monospace;">STB10214</span>
+            </div>
+          </div>
+
+          <!-- 3. Best Student Branch in Uttar Pradesh Section -->
+          <div class="award-card-detailed">
+            <div>
+              <div class="card-img-box" style="aspect-ratio: 16/11; margin-bottom: 1rem; cursor: pointer; background: #071322;" onclick="openAwardLightbox('images/awards/award-best-branch-up-section-cert.jpg', 'Best Student Branch in Uttar Pradesh Section', 'Section Excellence', 'IEEE BBDITM Student Branch got awarded with Best Student Branch in Uttar Pradesh Section.')">
+                <img src="images/awards/award-best-branch-up-section-cert.jpg" alt="Best Student Branch in Uttar Pradesh Section" style="object-fit: contain;">
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-family: monospace; font-size: 0.75rem; font-weight: 800; color: var(--primary-blue); text-transform: uppercase;">
+                  Section Excellence
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,40,85,0.08); padding: 0.2rem 0.5rem; border-radius: 0.3rem; font-weight: 800; color: var(--primary-navy);">
+                  UP SECTION (R10)
+                </span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.3;">
+                Best Student Branch in Uttar Pradesh Section
+              </h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                Awarding Body: IEEE Uttar Pradesh Section
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                It is great matter of joy to inform you that, IEEE Babu Banarasi Das Institute of Technology & Management Student Branch (STB10214) got awarded with “Best Student Branch in Uttar Pradesh Section”.<br><br>
+                With the best intent & Support of you all, many more awards and recognition will come to the Student Branch, naturally. Once again, many Congratulations & thanks to all the valuable members, Volunteers, Participants for Valuable Contribution & Continuous Support.
+              </p>
+            </div>
+            <div style="border-top: 1px solid var(--border-color); padding-top: 0.75rem; font-size: 0.75rem; color: #16a34a; font-weight: 700; display: flex; justify-content: space-between;">
+              <span>✓ Verified Section Award</span>
+              <span style="color: var(--text-muted); font-family: monospace;">STB10214</span>
+            </div>
+          </div>
+
+          <!-- 4. IEEE India Council Award Outstanding Student Branch (Certificate) -->
+          <div class="award-card-detailed">
+            <div>
+              <div class="card-img-box" style="aspect-ratio: 16/11; margin-bottom: 1rem; cursor: pointer; background: #071322;" onclick="openAwardLightbox('images/awards/award-india-council-branch-cert.jpg', 'IEEE India Council Award Outstanding Student Branch (Official Certificate)', 'Official Council Certificate', 'Official certificate presented on 15th December 2023 during IEEE India Council Awards Night held at Hyderabad to Babu Banarasi Das Inst. of Tech. & Mgmt.')">
+                <img src="images/awards/award-india-council-branch-cert.jpg" alt="IEEE India Council Award Outstanding Student Branch Certificate" style="object-fit: contain;">
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-family: monospace; font-size: 0.75rem; font-weight: 800; color: var(--primary-blue); text-transform: uppercase;">
+                  Official Council Certificate
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,40,85,0.08); padding: 0.2rem 0.5rem; border-radius: 0.3rem; font-weight: 800; color: var(--primary-navy);">
+                  INDIA COUNCIL
+                </span>
+              </div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.3;">
+                IEEE India Council Award Outstanding Student Branch
+              </h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                Awarding Body: IEEE India Council (Hyderabad Awards Night)
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+                Official certificate presented on 15th December 2023 during IEEE India Council Awards Night held at Hyderabad to Babu Banarasi Das Inst. of Tech. & Mgmt. (STB10214), Uttar Pradesh Section, signed by Prof. Sudip Misra (Vice Chair, Awards) and Prof. Debabrata Das (Chair, IEEE India Council).
+              </p>
+            </div>
+            <div style="border-top: 1px solid var(--border-color); padding-top: 0.75rem; font-size: 0.75rem; color: #16a34a; font-weight: 700; display: flex; justify-content: space-between;">
+              <span>✓ Verified National Citation</span>
+              <span style="color: var(--text-muted); font-family: monospace;">STB10214</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ALL OTHER PRESTIGIOUS AWARDS (GALLERY & PAGINATION) ================= -->
+    <section class="section-py" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-header" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem;">
+          <div>
+            <div class="pill-badge">Archival & Photographic Evidence</div>
+            <h2 class="section-title">All Other Prestigious Awards of IEEE BBDITM</h2>
+            <p class="section-subtitle">
+              Explore high-resolution photographs, award plaques, citations, and stage felicitations from the official branch archives.
+            </p>
+          </div>
+          <span style="font-size: 0.85rem; font-family: monospace; font-weight: 700; color: var(--primary-blue);">
+            5 Verified Authentic Records
+          </span>
+        </div>
+
+        <!-- Dynamic Paginated Gallery Grid -->
+        <div id="galleryGrid" class="card-grid-3" style="margin-bottom: 2rem;">
+          <!-- Dynamically Rendered by JavaScript -->
+        </div>
+
+        <!-- Pagination Controls: [Previous] [1] [2] [Next] -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem; flex-wrap: wrap; padding-top: 1rem;">
+          <button id="prevPageBtn" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;" onclick="changeGalleryPage(-1)">
+            ← Previous
+          </button>
+          <div id="paginationNumbers" style="display: flex; gap: 0.35rem;">
+            <!-- Rendered by JS -->
+          </div>
+          <button id="nextPageBtn" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;" onclick="changeGalleryPage(1)">
+            Next →
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div id="awardLightbox" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 800px;">
+      <div class="modal-header">
+        <div>
+          <span id="lightboxCategory" style="font-size: 0.7rem; font-family: monospace; font-weight: 800; color: #38bdf8; text-transform: uppercase;"></span>
+          <h3 id="lightboxTitle" class="modal-title" style="font-size: 1.15rem; margin-top: 0.2rem;"></h3>
+        </div>
+        <button class="modal-close" onclick="document.getElementById('awardLightbox').classList.remove('open')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 1.5rem; text-align: center; background: #000000;">
+        <img id="lightboxImage" src="" alt="Award High-Res View" style="max-height: 65vh; max-width: 100%; border-radius: 0.75rem; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <p id="lightboxDescription" style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.6; margin-top: 1rem; text-align: center;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CONTACT MODAL (DIRECT LEADERSHIP CARDS - NO FORM) ================= -->
+  <div id="contactModal" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #002855, #00629B); color: #ffffff;">
+        <div>
+          <span style="font-size: 0.7rem; font-family: monospace; font-weight: 800; color: #38bdf8; text-transform: uppercase;">
+            STB10214 • Direct Contact Channels
+          </span>
+          <h3 class="modal-title" style="font-size: 1.25rem; margin-top: 0.2rem; color: #ffffff;">Contact IEEE BBDITM Leadership</h3>
+        </div>
+        <button id="closeContactBtn" class="modal-close" style="color: #ffffff;" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; background: var(--bg-card);">
+        
+        <!-- Top Info Banner -->
+        <div style="padding: 0.75rem 1rem; border-radius: 0.75rem; background: rgba(0, 40, 85, 0.06); border: 1px solid rgba(0, 40, 85, 0.15); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-secondary);">
+          <span style="font-weight: 700; color: var(--primary-navy);">Direct Communication Channels for Inquiries & Mentorship</span>
+          <span style="font-family: monospace; font-weight: 800; color: var(--primary-blue);">STB10214</span>
+        </div>
+
+        <!-- Card 1: Branch Counselor (Prof. Rafik Ahmad) -->
+        <div class="feature-card" style="display: flex; gap: 1.25rem; flex-direction: row; align-items: flex-start; padding: 1.25rem; border: 2px solid var(--border-color); border-radius: 1.25rem;">
+          <div style="width: 100px; height: 125px; border-radius: 0.85rem; overflow: hidden; background: #0f172a; flex-shrink: 0; border: 1px solid rgba(0,40,85,0.2);">
+            <img src="images/prof-rafik-ahmad.png" alt="Prof. Rafik Ahmad" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+          </div>
+          <div style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; background: rgba(0,40,85,0.1); color: var(--primary-blue); padding: 0.2rem 0.5rem; border-radius: 1rem; text-transform: uppercase;">
+                Branch Counselor
+              </span>
+              <span style="font-size: 0.7rem; color: var(--text-muted); font-family: monospace; font-weight: 700;">Dept. of ECE</span>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary); margin: 0.2rem 0;">Prof. Rafik Ahmad</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.75rem;">
+              Professor & Senior Faculty Member. Guiding student research, Section liaison, and technical compliance.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="tel:+919450026899" class="btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; background: var(--primary-navy);">
+                📞 +91 94500 26899
+              </a>
+              <a href="https://wa.me/919450026899" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; color: #16a34a; border-color: #16a34a;">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Student Branch President (Mohammed Saif) -->
+        <div class="feature-card" style="display: flex; gap: 1.25rem; flex-direction: row; align-items: flex-start; padding: 1.25rem; border: 2px solid var(--border-color); border-radius: 1.25rem;">
+          <div style="width: 100px; height: 125px; border-radius: 0.85rem; overflow: hidden; background: #0f172a; flex-shrink: 0; border: 1px solid rgba(0,40,85,0.2);">
+            <img src="images/mohammed-saif.png" alt="Mohammed Saif" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+          </div>
+          <div style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; background: rgba(0,40,85,0.1); color: var(--primary-blue); padding: 0.2rem 0.5rem; border-radius: 1rem; text-transform: uppercase;">
+                Student Branch President
+              </span>
+              <span style="font-size: 0.7rem; color: var(--text-muted); font-family: monospace; font-weight: 700;">Chairperson 2026</span>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary); margin: 0.2rem 0;">Mohammed Saif</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.75rem;">
+              President & Chair, IEEE BBDITM. Leading 7 societies, member registrations, and hackathon teams.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="tel:+917275241800" class="btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; background: var(--primary-navy);">
+                📞 +91 72752 41800
+              </a>
+              <a href="https://wa.me/917275241800" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; color: #16a34a; border-color: #16a34a;">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Headquarters & Email -->
+        <div style="padding: 0.85rem 1rem; border-radius: 0.85rem; background: var(--bg-secondary); border: 1px solid var(--border-color); font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <div style="font-weight: 700; color: var(--primary-navy);">📍 BBD Educational City, Faizabad Road, Lucknow, UP 226028</div>
+            <div style="color: var(--text-muted); margin-top: 0.2rem;">✉️ <a href="mailto:ieee@bbditm.ac.in" style="color: var(--primary-blue); font-weight: 700;">ieee@bbditm.ac.in</a> • IEEE UP Section</div>
+          </div>
+          <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.7rem;">
+            Join on ieee.org ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <div class="logo-badge" style="padding: 0.2rem 0.5rem;"><img src="images/branch-logo.png" alt="Logo" style="height: 1.5rem;"></div>
+            <span style="font-weight: 800; font-size: 1.1rem;">IEEE BBDITM</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+            Student Branch Code: <strong>STB10214</strong><br>
+            Babu Banarasi Das Institute of Technology and Management, Lucknow.<br>
+            IEEE Uttar Pradesh Section (Region 10).
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Branch</a></li>
+            <li><a href="events.html">Events & Workshops</a></li>
+            <li><a href="societies.html">Societies & Chapters</a></li>
+            <li><a href="team.html">Faculty & 2026 Team</a></li>
+            <li><a href="awards.html">Awards & Accolades</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Societies</h4>
+          <ul class="footer-links">
+            <li><a href="societies.html#cs">Computer Society (CS)</a></li>
+            <li><a href="societies.html#pes">Power & Energy (PES)</a></li>
+            <li><a href="societies.html#pels">Power Electronics (PELS)</a></li>
+            <li><a href="societies.html#wie">Women in Engineering (WIE)</a></li>
+            <li><a href="https://www.ieee.org/membership/join/index.html" target="_blank">Join on ieee.org ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">IEEE Official</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.ieee.org/" target="_blank">IEEE.org Global ↗</a></li>
+            <li><a href="http://ieeexplore.ieee.org/" target="_blank">IEEE Xplore Digital Library ↗</a></li>
+            <li><a href="https://www.ieeer10.org/" target="_blank">IEEE Region 10 (Asia-Pacific) ↗</a></li>
+            <li><a href="https://ieeeup.org/" target="_blank">IEEE Uttar Pradesh Section ↗</a></li>
+            <li><a href="https://ieee-collabratec.ieee.org/" target="_blank">IEEE Collabratec ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 IEEE BBDITM Student Branch (STB10214). All Rights Reserved.</p>
+        <p>Affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/chatbot.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Authentic user-uploaded award assets
+    const ALL_AWARDS = [
+      {
+        title: 'Outstanding Student Branch of the Year 2023 — IEEE India Council',
+        category: 'National Council Honor',
+        date: '15th Dec 2023 • Hyderabad',
+        image: 'images/awards/award-india-council-branch-poster.png',
+        description: 'Babu Banarasi Das Institute of Technology & Management (STB10214) awarded Outstanding Student Branch of the Year Award 2023.'
+      },
+      {
+        title: 'IEEE India Council Award — Branch Certificate of Merit',
+        category: 'Official Council Certificate',
+        date: '15th Dec 2023 • Hyderabad',
+        image: 'images/awards/award-india-council-branch-cert.jpg',
+        description: 'Official certificate presented during IEEE India Council Awards Night held at Hyderabad.'
+      },
+      {
+        title: 'Outstanding Student Volunteer of the Year 2023 — Mr. Hitansh Dwivedi',
+        category: 'Student Volunteer Honor',
+        date: '15th Dec 2023 • Hyderabad',
+        image: 'images/awards/award-hitansh-volunteer-poster.jpg',
+        description: 'Hitansh Dwivedi (Chairperson, IEEE BBDITM STB10214) awarded as IEEE INDIA Council Outstanding Student Volunteers Award 2023.'
+      },
+      {
+        title: 'Outstanding Student Volunteer of the Year — Official Certificate',
+        category: 'Official Volunteer Certificate',
+        date: '15th Dec 2023 • Hyderabad',
+        image: 'images/awards/award-hitansh-volunteer-cert.png',
+        description: 'Official certificate presented during IEEE India Council Awards Night held at Hyderabad to Hitansh Dwivedi.'
+      },
+      {
+        title: 'Best Student Branch / Branch Chapter Award — IEEE UP Section',
+        category: 'IEEE UP Section Gold Frame Certificate',
+        date: '28th Feb 2021 • IIIT Allahabad AGM',
+        image: 'images/awards/award-best-branch-up-section-cert.jpg',
+        description: 'Presented to BBD Institute of Technology & Management, Lucknow (STB10214) at the IEEE U.P. Section AGM at IIIT Allahabad.'
+      }
+    ];
+
+    let currentGalleryPage = 1;
+    const perPage = 3;
+    const totalGalleryPages = Math.ceil(ALL_AWARDS.length / perPage);
+
+    function renderGallery() {
+      const start = (currentGalleryPage - 1) * perPage;
+      const end = start + perPage;
+      const pageItems = ALL_AWARDS.slice(start, end);
+      const grid = document.getElementById('galleryGrid');
+      
+      grid.innerHTML = pageItems.map(item => `
+        <div class="gallery-thumb-card" onclick="openAwardLightbox('${item.image}', '${item.title.replace(/'/g, "\\'")}', '${item.category}', '${item.description.replace(/'/g, "\\'")}')">
+          <div>
+            <div class="card-img-box" style="aspect-ratio: 16/11; margin-bottom: 0.75rem; background: #071322;">
+              <img src="${item.image}" alt="${item.title}" style="object-fit: contain;">
+            </div>
+            <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; color: var(--primary-blue); text-transform: uppercase;">
+              ${item.category}
+            </span>
+            <h4 style="font-size: 0.95rem; font-weight: 800; margin: 0.25rem 0; color: var(--text-primary);">
+              ${item.title}
+            </h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+              ${item.description}
+            </p>
+          </div>
+          <div style="border-top: 1px solid var(--border-color); padding-top: 0.5rem; margin-top: 0.75rem; display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); font-family: monospace;">
+            <span>${item.date}</span>
+            <span style="color: var(--primary-blue); font-weight: 700;">ENLARGE ↗</span>
+          </div>
+        </div>
+      `).join('');
+
+      // Render pagination buttons
+      const numContainer = document.getElementById('paginationNumbers');
+      numContainer.innerHTML = Array.from({ length: totalGalleryPages }, (_, i) => i + 1).map(num => `
+        <button class="page-btn ${num === currentGalleryPage ? 'active' : ''}" onclick="goToGalleryPage(${num})">${num}</button>
+      `).join('');
+
+      document.getElementById('prevPageBtn').disabled = currentGalleryPage === 1;
+      document.getElementById('nextPageBtn').disabled = currentGalleryPage === totalGalleryPages;
+    }
+
+    function changeGalleryPage(dir) {
+      currentGalleryPage = Math.max(1, Math.min(totalGalleryPages, currentGalleryPage + dir));
+      renderGallery();
+    }
+
+    function goToGalleryPage(page) {
+      currentGalleryPage = page;
+      renderGallery();
+    }
+
+    function openAwardLightbox(image, title, cat, desc) {
+      document.getElementById('lightboxImage').src = image;
+      document.getElementById('lightboxTitle').innerText = title;
+      document.getElementById('lightboxCategory').innerText = cat;
+      document.getElementById('lightboxDescription').innerText = desc;
+      document.getElementById('awardLightbox').classList.add('open');
+    }
+
+    document.addEventListener('DOMContentLoaded', renderGallery);
+  </script>
+</body>
+</html>

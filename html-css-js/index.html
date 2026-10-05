@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE BBDITM Student Branch (STB10214) — Lucknow</title>
+  <meta name="description" content="Official website of IEEE BBDITM Student Branch (STB10214), Babu Banarasi Das Institute of Technology and Management, Lucknow, Uttar Pradesh.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Three.js CDN for 3D Globe -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- ================= TOP STICKY NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Dual Brand Logos (BBDITM Far Left + IEEE Student Branch Next) -->
+        <a href="index.html" class="brand-logo" title="BBDITM & IEEE Student Branch (STB10214)">
+          <div class="logo-badge">
+            <img src="images/bbditm-logo.png" alt="BBDITM Official Logo">
+          </div>
+          <div class="logo-badge">
+            <img src="images/branch-logo.png" alt="IEEE BBDITM Logo">
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="societies.html" class="nav-link">Societies</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="awards.html" class="nav-link">Awards</a>
+          <button type="button" class="nav-link open-contact-btn">Contact</button>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="nav-controls">
+          <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-label">Dark</span>
+          </button>
+          <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            Join IEEE
+          </a>
+          <button id="mobileMenuBtn" class="icon-btn mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div id="mobileDrawer" class="mobile-drawer">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="societies.html" class="nav-link">Societies</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="awards.html" class="nav-link">Awards</a>
+        <button type="button" class="nav-link open-contact-btn" style="text-align: left;">Contact Counselor</button>
+        <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-primary" style="justify-content: center; margin-top: 0.5rem;">Join on ieee.org</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION WITH FULL BACKGROUND COVER & 3D LETTERS ================= -->
+  <main>
+    <section class="hero-section" style="position: relative; overflow: hidden; background: none;">
+      <!-- FULL BACKGROUND COVER IMAGE -->
+      <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none;">
+        <img src="images/bbditm-campus-daytime-ieee.jpg" alt="BBDITM Campus" style="width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(1);">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(248,250,252,0.95), rgba(248,250,252,0.88), rgba(239,246,255,0.75)); backdrop-filter: blur(2px);"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="hero-grid">
+          <div>
+            <div class="pill-badge" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.95); border-color: rgba(0,40,85,0.2); box-shadow: 0 4px 12px rgba(0,40,85,0.08);">
+              <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+              <span>✦</span> ADVANCING TECHNOLOGY FOR HUMANITY • STB10214
+            </div>
+
+            <!-- 3D DROPPING IEEE ALPHABETS -->
+            <div style="margin: 0.85rem 0 0.6rem 0;">
+              <div id="hero3dLetters" style="display: flex; gap: 0.6rem; perspective: 1000px;" onclick="reDropLetters()">
+                <div class="ieee-3d-letter animate-letter-drop-1">I</div>
+                <div class="ieee-3d-letter animate-letter-drop-2">E</div>
+                <div class="ieee-3d-letter animate-letter-drop-3">E</div>
+                <div class="ieee-3d-letter animate-letter-drop-4">E</div>
+              </div>
+            </div>
+
+            <h1 class="hero-heading" style="color: #001D3D;">
+              INNOVATING THE FUTURE. <br>
+              <span class="gradient-text">POWERED BY IEEE BBDITM.</span>
+            </h1>
+            <p class="hero-desc">
+              Welcome to the premier student technology community at <strong>Babu Banarasi Das Institute of Technology and Management</strong>, Lucknow. Fostering multidisciplinary engineering, robotics, space technology dialogues with ISRO scientists, and published research across the global IEEE network.
+            </p>
+            <div class="hero-actions">
+              <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; background: linear-gradient(135deg, #002855, #00629B);">
+                Join IEEE on official portal ↗
+              </a>
+              <a href="societies.html" class="btn-secondary" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; color: #002855; border-color: rgba(0,40,85,0.3); background: rgba(255,255,255,0.9);">
+                Explore 7 Technical Societies ↗
+              </a>
+            </div>
+            <div class="trust-indicators" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem;">
+              <span style="padding: 0.35rem 0.75rem; background: rgba(255,255,255,0.9); border-radius: 0.5rem; border: 1px solid rgba(0,40,85,0.15); font-size: 0.8rem; font-weight: 600; color: #001D3D;">✓ IEEE UP Section (Region 10)</span>
+              <span style="padding: 0.35rem 0.75rem; background: rgba(255,255,255,0.9); border-radius: 0.5rem; border: 1px solid rgba(0,40,85,0.15); font-size: 0.8rem; font-weight: 600; color: #001D3D;">📍 BBD Educational City, Lucknow</span>
+              <span style="padding: 0.35rem 0.75rem; background: rgba(0, 98, 155, 0.12); border-radius: 0.5rem; border: 1px solid rgba(0, 98, 155, 0.3); font-size: 0.8rem; font-family: monospace; font-weight: 800; color: #002855;">Code: STB10214</span>
+            </div>
+          </div>
+
+          <!-- Photorealistic 3D Earth Globe Canvas -->
+          <div>
+            <div class="model-wrapper" style="box-shadow: 0 20px 50px rgba(0,40,85,0.25); border: 2px solid rgba(0,40,85,0.15);">
+              <div class="model-underlay">
+                <img src="images/bbditm-campus-3d-ieee.png" alt="IEEE BBDITM 3D Landmark">
+              </div>
+              <div id="globeContainer" class="model-canvas-box" title="Drag to inspect global IEEE nodes"></div>
+              <div class="model-legend">
+                <div style="font-weight: 800; color: var(--text-primary);">IEEE Global Branch Network</div>
+                <div style="font-family: monospace; color: var(--primary-blue);">Lucknow STB10214 • Regions 1–10</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATISTICS ROW ================= -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>120+</h3>
+            <p>Active Student Members</p>
+          </div>
+          <div class="stat-item">
+            <h3>48+</h3>
+            <p>Technical Conclaves & Talks</p>
+          </div>
+          <div class="stat-item">
+            <h3>7</h3>
+            <p>Societies & Affinity Groups</p>
+          </div>
+          <div class="stat-item">
+            <h3>30+</h3>
+            <p>Student Hardware Projects</p>
+          </div>
+          <div class="stat-item">
+            <h3>18+</h3>
+            <p>Honors & Stage Felicitations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT IEEE BBDITM (SINGLE OFFICIAL TEAM PHOTO + INFO CARDS) ================= -->
+    <section class="section-py" id="about" style="background: linear-gradient(180deg, #F8FAFC 0%, #F0F7FF 50%, #ffffff 100%);">
+      <div class="container">
+        <div class="card-grid-2" style="align-items: center; gap: 3rem;">
+          
+          <!-- LEFT: Single Official Team Photo -->
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="position: relative; width: 100%; max-width: 500px; border-radius: 1.5rem; overflow: hidden; background: #071322; border: 2px solid rgba(0, 40, 85, 0.18); box-shadow: 0 20px 40px rgba(0, 40, 85, 0.15); cursor: pointer;" onclick="document.getElementById('teamLightbox').classList.add('open')">
+              <div style="position: relative; aspect-ratio: 16/11; width: 100%; overflow: hidden;">
+                <img src="images/ieee-bbditm-team-2025-2026.png" alt="IEEE BBDITM Official Team 2025 & 2026" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+                
+                <!-- Badge Top Left -->
+                <div style="position: absolute; top: 0.85rem; left: 0.85rem; z-index: 10;">
+                  <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; text-transform: uppercase; background: rgba(0,40,85,0.88); color: #38bdf8; padding: 0.25rem 0.6rem; border-radius: 1rem; border: 1px solid rgba(56,189,248,0.4); backdrop-filter: blur(4px);">
+                    👥 Official Team 2025 & 2026
+                  </span>
+                </div>
+
+                <!-- Caption Bottom -->
+                <div style="position: absolute; bottom: 0.85rem; inset-x: 1rem; text-align: left; background: rgba(0,29,61,0.85); backdrop-filter: blur(4px); padding: 0.5rem 0.85rem; border-radius: 0.75rem; border: 1px solid rgba(255,255,255,0.15);">
+                  <div style="font-size: 0.65rem; font-family: monospace; font-weight: 800; color: #38bdf8; text-transform: uppercase;">Annual General Meeting (AGM) • STB10214</div>
+                  <div style="font-size: 0.85rem; font-weight: 800; color: #ffffff;">Student Branch Executive Committee & Society Chairs</div>
+                </div>
+              </div>
+
+              <div style="padding: 0.75rem 1rem; background: #ffffff; border-top: 1px solid rgba(0,40,85,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem;">
+                <span style="font-weight: 700; color: #001D3D;">BBD Educational City Campus, Lucknow</span>
+                <span style="font-family: monospace; color: #00629B; font-weight: 800;">STB10214</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: About Content & 4 Info Cards -->
+          <div>
+            <div class="pill-badge" style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(0, 40, 85, 0.08); color: #002855; border-color: rgba(0, 40, 85, 0.2);">
+              <span>✦</span> ABOUT IEEE BBDITM
+            </div>
+            
+            <h2 class="section-title" style="font-size: 2.25rem; line-height: 1.15; margin-top: 0.5rem; color: #001D3D;">
+              MORE THAN A STUDENT BRANCH. <br>
+              <span class="gradient-text">IT'S A LAUNCHPAD.</span>
+            </h2>
+
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.6; font-size: 0.95rem;">
+              The IEEE Student Branch at <strong>BBDITM Lucknow (STB10214)</strong> is a premier student technology community dedicated to hands-on engineering, multidisciplinary innovation, robotics, space technology dialogues with ISRO scientists, and published research. We bridge undergraduate talent with the global IEEE network through 7 specialized societies, competitive hackathons, and world-class mentorship.
+            </p>
+
+            <!-- 4 Small Premium Info Cards -->
+            <div class="info-cards-grid">
+              <div class="info-card-item" style="border: 1px solid rgba(0, 40, 85, 0.15); box-shadow: 0 4px 15px rgba(0,40,85,0.06); background: #ffffff;">
+                <div class="info-card-label" style="color: #002855;">Branch ID</div>
+                <div class="info-card-val" style="color: #001D3D;">STB10214</div>
+                <div class="info-card-sub">IEEE UP Section</div>
+              </div>
+
+              <div class="info-card-item" style="border: 1px solid rgba(0, 40, 85, 0.15); box-shadow: 0 4px 15px rgba(0,40,85,0.06); background: #ffffff;">
+                <div class="info-card-label" style="color: #002855;">Institution</div>
+                <div class="info-card-val" style="color: #001D3D;">BBDITM</div>
+                <div class="info-card-sub">AKTU Affiliated • Lucknow</div>
+              </div>
+
+              <div class="info-card-item" style="border: 1px solid rgba(0, 40, 85, 0.15); box-shadow: 0 4px 15px rgba(0,40,85,0.06); background: #ffffff;">
+                <div class="info-card-label" style="color: #002855;">Established</div>
+                <div class="info-card-val" style="color: #001D3D;">Active Charter</div>
+                <div class="info-card-sub">Region 10 Asia-Pacific</div>
+              </div>
+
+              <div class="info-card-item" style="border: 1px solid rgba(0, 40, 85, 0.15); box-shadow: 0 4px 15px rgba(0,40,85,0.06); background: #ffffff;">
+                <div class="info-card-label" style="color: #002855;">Location</div>
+                <div class="info-card-val" style="color: #001D3D;">Lucknow, UP</div>
+                <div class="info-card-sub">BBD Educational City</div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap; margin-top: 1.25rem;">
+              <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.9rem; background: linear-gradient(135deg, #002855, #00629B);">
+                Explore IEEE →
+              </a>
+              <a href="about.html" class="btn-secondary" style="padding: 0.7rem 1.4rem; font-size: 0.9rem; color: #002855; border-color: rgba(0,40,85,0.3); background: #ffffff;">
+                Our History →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2026 OFFICE BEARERS MASTER BANNER ================= -->
+    <section class="section-py" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <div class="pill-badge">Official Branch Leadership 2026</div>
+            <h2 class="section-title">IEEE Office Bearers — 2026</h2>
+            <p class="section-subtitle">Official Executive Committee Chart: Mrs. Alka Das, Shri Viraj Sagar Das, Dr. Anurag Tiwari, Prof. Rafik Ahmad, and Student Leads.</p>
+          </div>
+          <button id="bannerCardBtn" class="btn-primary" onclick="document.getElementById('chartLightbox').classList.add('open')">
+            🔍 View Fullscreen Chart
+          </button>
+        </div>
+
+        <div id="bannerCard" class="banner-card">
+          <img src="images/ieee-office-bearers-2026.png" alt="IEEE Office Bearers - 2026 Executive Committee Chart">
+          <div style="padding: 1rem 1.25rem; font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between; border-top: 1px solid var(--border-color);">
+            <span>✓ Verified STB10214 Executive Council Roster</span>
+            <span style="font-weight: 700; color: var(--primary-blue);">Click Image to Expand</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JOIN IEEE CTA BANNER ================= -->
+    <section class="section-py" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, #002855, #003875, #00629b); color: #ffffff; border-radius: 1.75rem; padding: 3rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+          <div style="max-width: 38rem;">
+            <div class="pill-badge" style="background: rgba(255,255,255,0.15); color: #38bdf8; border-color: rgba(255,255,255,0.25);">Student Membership Drive 2026</div>
+            <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 0.75rem; line-height: 1.15;">BUILD YOUR FUTURE WITH IEEE BBDITM.</h2>
+            <p style="font-size: 0.95rem; color: #cbd5e1; line-height: 1.6;">Access 5M+ IEEE Xplore digital papers, discounted conference travel grants, professional @ieee.org email, and student chapter leadership.</p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="background: #ffffff; color: #002855; font-weight: 800; font-size: 1rem; padding: 0.85rem 1.75rem;">
+              Join IEEE (ieee.org) ↗
+            </a>
+            <button class="btn-secondary open-contact-btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border-color: rgba(255,255,255,0.25);">
+              Contact Counselor
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div class="logo-badge" style="padding: 0.2rem 0.5rem;"><img src="images/branch-logo.png" alt="IEEE Logo" style="height: 1.5rem;"></div>
+            <strong style="color: #ffffff; font-size: 1rem;">IEEE BBDITM STB10214</strong>
+          </div>
+          <p style="margin-bottom: 1rem; line-height: 1.6;">Babu Banarasi Das Institute of Technology and Management, Sector I, Dr. Akhilesh Das Nagar, Faizabad Road, Lucknow, UP 226028.</p>
+          <p>Email: <a href="mailto:ieee@bbditm.ac.in" style="color: #38bdf8;">ieee@bbditm.ac.in</a></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Branch</a></li>
+            <li><a href="events.html">Events & Calendar</a></li>
+            <li><a href="societies.html">7 Societies</a></li>
+            <li><a href="team.html">2026 Office Bearers</a></li>
+            <li><a href="awards.html">Awards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Societies</h4>
+          <ul>
+            <li><a href="societies.html">IEEE Computer Society</a></li>
+            <li><a href="societies.html">IEEE Power & Energy (PES)</a></li>
+            <li><a href="societies.html">IEEE Power Electronics (PELS)</a></li>
+            <li><a href="societies.html">IEEE Women in Engineering (WIE)</a></li>
+            <li><a href="societies.html">IEEE Signal Processing (SPS)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official IEEE</h4>
+          <ul>
+            <li><a href="https://www.ieee.org" target="_blank">IEEE.org Global ↗</a></li>
+            <li><a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore Library ↗</a></li>
+            <li><a href="https://ieeeup.org" target="_blank">IEEE UP Section ↗</a></li>
+            <li><a href="https://www.ieeer10.org" target="_blank">IEEE Region 10 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 IEEE BBDITM Student Branch (STB10214). All Rights Reserved.</span>
+        <span>Branch Counselor: Prof. Rafik Ahmad • Lucknow</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= CONTACT MODAL (DIRECT LEADERSHIP CARDS - NO FORM) ================= -->
+  <div id="contactModal" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #002855, #00629B); color: #ffffff;">
+        <div>
+          <span style="font-size: 0.7rem; font-family: monospace; font-weight: 800; color: #38bdf8; text-transform: uppercase;">
+            STB10214 • Direct Contact Channels
+          </span>
+          <h3 class="modal-title" style="font-size: 1.25rem; margin-top: 0.2rem; color: #ffffff;">Contact IEEE BBDITM Leadership</h3>
+        </div>
+        <button id="closeContactBtn" class="modal-close" style="color: #ffffff;" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; background: var(--bg-card);">
+        
+        <!-- Top Info Banner -->
+        <div style="padding: 0.75rem 1rem; border-radius: 0.75rem; background: rgba(0, 40, 85, 0.06); border: 1px solid rgba(0, 40, 85, 0.15); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-secondary);">
+          <span style="font-weight: 700; color: var(--primary-navy);">Direct Communication Channels for Inquiries & Mentorship</span>
+          <span style="font-family: monospace; font-weight: 800; color: var(--primary-blue);">STB10214</span>
+        </div>
+
+        <!-- Card 1: Branch Counselor (Prof. Rafik Ahmad) -->
+        <div class="feature-card" style="display: flex; gap: 1.25rem; flex-direction: row; align-items: flex-start; padding: 1.25rem; border: 2px solid var(--border-color); border-radius: 1.25rem;">
+          <div style="width: 100px; height: 125px; border-radius: 0.85rem; overflow: hidden; background: #0f172a; flex-shrink: 0; border: 1px solid rgba(0,40,85,0.2);">
+            <img src="images/prof-rafik-ahmad.png" alt="Prof. Rafik Ahmad" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+          </div>
+          <div style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; background: rgba(0,40,85,0.1); color: var(--primary-blue); padding: 0.2rem 0.5rem; border-radius: 1rem; text-transform: uppercase;">
+                Branch Counselor
+              </span>
+              <span style="font-size: 0.7rem; color: var(--text-muted); font-family: monospace; font-weight: 700;">Dept. of ECE</span>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary); margin: 0.2rem 0;">Prof. Rafik Ahmad</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.75rem;">
+              Professor & Senior Faculty Member. Guiding student research, Section liaison, and technical compliance.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="tel:+919450026899" class="btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; background: var(--primary-navy);">
+                📞 +91 94500 26899
+              </a>
+              <a href="https://wa.me/919450026899" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; color: #16a34a; border-color: #16a34a;">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Student Branch President (Mohammed Saif) -->
+        <div class="feature-card" style="display: flex; gap: 1.25rem; flex-direction: row; align-items: flex-start; padding: 1.25rem; border: 2px solid var(--border-color); border-radius: 1.25rem;">
+          <div style="width: 100px; height: 125px; border-radius: 0.85rem; overflow: hidden; background: #0f172a; flex-shrink: 0; border: 1px solid rgba(0,40,85,0.2);">
+            <img src="images/mohammed-saif.png" alt="Mohammed Saif" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+          </div>
+          <div style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.65rem; font-family: monospace; font-weight: 800; background: rgba(0,40,85,0.1); color: var(--primary-blue); padding: 0.2rem 0.5rem; border-radius: 1rem; text-transform: uppercase;">
+                Student Branch President
+              </span>
+              <span style="font-size: 0.7rem; color: var(--text-muted); font-family: monospace; font-weight: 700;">Chairperson 2026</span>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary); margin: 0.2rem 0;">Mohammed Saif</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 0.75rem;">
+              President & Chair, IEEE BBDITM. Leading 7 societies, member registrations, and hackathon teams.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="tel:+917275241800" class="btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; background: var(--primary-navy);">
+                📞 +91 72752 41800
+              </a>
+              <a href="https://wa.me/917275241800" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.75rem; color: #16a34a; border-color: #16a34a;">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Headquarters & Email -->
+        <div style="padding: 0.85rem 1rem; border-radius: 0.85rem; background: var(--bg-secondary); border: 1px solid var(--border-color); font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <div style="font-weight: 700; color: var(--primary-navy);">📍 BBD Educational City, Faizabad Road, Lucknow, UP 226028</div>
+            <div style="color: var(--text-muted); margin-top: 0.2rem;">✉️ <a href="mailto:ieee@bbditm.ac.in" style="color: var(--primary-blue); font-weight: 700;">ieee@bbditm.ac.in</a> • IEEE UP Section</div>
+          </div>
+          <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.7rem;">
+            Join on ieee.org ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CHART LIGHTBOX MODAL ================= -->
+  <div id="chartLightbox" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 95vw; width: 1100px;">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 800;">IEEE Office Bearers - 2026</h3>
+          <p style="font-size: 0.72rem; color: #bae6fd; font-family: monospace;">IEEE BBDITM Student Branch Executive Committee Chart</p>
+        </div>
+        <button id="closeLightboxBtn" style="color: #ffffff; font-size: 1.25rem;">✕</button>
+      </div>
+      <div class="modal-body" style="padding: 1rem; text-align: center; background: #000000;">
+        <img src="images/ieee-office-bearers-2026.png" alt="2026 Full Chart" style="max-height: 80vh; width: auto; max-width: 100%; border-radius: 0.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TEAM 2025-2026 PHOTO LIGHTBOX ================= -->
+  <div id="teamLightbox" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 90vw; width: 750px;">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 800;">IEEE BBDITM Team — 2025 & 2026</h3>
+          <p style="font-size: 0.72rem; color: #bae6fd; font-family: monospace;">Annual General Meeting & Student Branch Executive Committee • STB10214</p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <a href="images/ieee-bbditm-team-2025-2026.png" download="IEEE_BBDITM_Team_2025_2026.png" class="btn-secondary" style="font-size: 0.75rem; padding: 0.3rem 0.6rem; color: #fff; border-color: rgba(255,255,255,0.3);">
+            ⬇ Download
+          </a>
+          <button onclick="document.getElementById('teamLightbox').classList.remove('open')" style="color: #ffffff; font-size: 1.25rem;">✕</button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 1rem; text-align: center; background: #000000;">
+        <img src="images/ieee-bbditm-team-2025-2026.png" alt="IEEE BBDITM Team 2025 & 2026 Fullscreen" style="max-height: 80vh; width: auto; max-width: 100%; border-radius: 0.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 3D CINEMATIC CAMPUS TOUR MODAL ================= -->
+  <div id="tour3dModal" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 95vw; width: 980px; border: 2px solid #002855; box-shadow: 0 25px 60px rgba(0, 40, 85, 0.6); background: #071322;">
+      <div class="modal-header" style="background: #001D3D; border-bottom: 1px solid rgba(0, 98, 155, 0.4); padding: 0.85rem 1.25rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div style="width: 2rem; height: 2rem; border-radius: 0.5rem; background: #002855; border: 1px solid #38bdf8; display: flex; align-items: center; justify-content: center; color: #38bdf8; font-size: 0.9rem;">
+            🏛
+          </div>
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 800; color: #ffffff; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+              BBDITM 3D Cinematic Campus Tour
+              <span style="font-size: 0.65rem; background: rgba(0,98,155,0.4); color: #38bdf8; padding: 0.15rem 0.45rem; border-radius: 1rem; border: 1px solid #38bdf8;">IEEE Dark Blue</span>
+            </h3>
+            <p style="font-size: 0.7rem; color: #bae6fd; font-family: monospace; margin: 0;">Babu Banarasi Das NITM • STB10214 Nocturnal Architectural Rendering</p>
+          </div>
+        </div>
+        <button id="closeTourModalBtn" style="color: #ffffff; font-size: 1.25rem; background: rgba(255,255,255,0.1); border: none; border-radius: 0.4rem; padding: 0.2rem 0.6rem; cursor: pointer;">✕</button>
+      </div>
+      <div class="modal-body" style="padding: 0; position: relative; aspect-ratio: 16/9; background: #000000; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+        <img id="tour3dImage" src="images/bbditm-campus-3d-ieee.png" alt="BBDITM 3D Campus IEEE" style="width: 100%; height: 100%; object-fit: cover; animation: cinematicPan 18s ease-in-out infinite alternate;">
+        <!-- Light sweep overlay -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(0,40,85,0.3), transparent); animation: beamSweep 6s ease-in-out infinite; pointer-events: none;"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,29,61,0.75), rgba(0,40,85,0.2), transparent); pointer-events: none;"></div>
+        <!-- HUD Tag -->
+        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(0,0,0,0.65); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 0.75rem; border-radius: 0.5rem; color: #fff; font-size: 0.75rem; font-family: monospace; display: flex; align-items: center; gap: 0.4rem;">
+          <span style="width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #4ade80;"></span>
+          <span>STB10214 HQ • 4K RENDER</span>
+        </div>
+      </div>
+      <div style="background: #001D3D; padding: 0.75rem 1.25rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,98,155,0.4);">
+        <div style="color: #94a3b8; font-size: 0.75rem; font-family: monospace;">
+          LAT 26.8878° N • LON 81.0583° E • BBD City, Lucknow
+        </div>
+        <a href="images/bbditm-campus-3d-ieee.png" download="BBDITM_3D_Campus_IEEE.png" class="btn-secondary" style="font-size: 0.75rem; padding: 0.35rem 0.85rem; color: #fff; border-color: rgba(56,189,248,0.4); background: rgba(0,40,85,0.6);">
+          ⬇ Download 4K Wallpaper
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING REAL-TIME AI CHATBOT ================= -->
+  <button id="chatTrigger" class="chatbot-trigger" title="Ask IEEE BBDITM AI Agent">
+    🤖
+  </button>
+
+  <div id="chatWindow" class="chatbot-window">
+    <div class="chat-header">
+      <div>
+        <div style="font-weight: 800; font-size: 0.9rem;">IEEE BBDITM AI Agent</div>
+        <div style="font-size: 0.65rem; color: #bae6fd;">Branch STB10214 Knowledge Engine</div>
+      </div>
+      <button id="chatCloseBtn" style="color: #ffffff; font-size: 1rem;">✕</button>
+    </div>
+
+    <div class="chat-pills">
+      <button type="button" class="pill-btn" data-query="How to join IEEE?">How to join?</button>
+      <button type="button" class="pill-btn" data-query="2026 Office Bearers">2026 Team</button>
+      <button type="button" class="pill-btn" data-query="Sheetal Pal PELS">Sheetal Pal</button>
+      <button type="button" class="pill-btn" data-query="ISRO space tech event">ISRO Event</button>
+    </div>
+
+    <div id="chatMessages" class="chat-messages">
+      <div class="chat-bubble ai">
+        Hello! I am the <strong>IEEE BBDITM AI Assistant</strong>. How can I help you today? You can ask about IEEE membership, our 2026 team, societies, or events!
+      </div>
+    </div>
+
+    <form id="chatForm" class="chat-footer">
+      <input type="text" id="chatInput" class="form-control" placeholder="Ask IEEE Assistant..." style="font-size: 0.8rem; padding: 0.45rem 0.65rem;">
+      <button type="submit" class="btn-primary" style="padding: 0.45rem 0.75rem;">Send</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/globe.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 98 155;
+    --color-primary-dark: 0 40 85;
+    --color-accent: 0 163 224;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle tech grid background */
+.tech-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 98, 155, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 98, 155, 0.05) 1px, transparent 1px);
+}
+
+.dark .tech-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 163, 224, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 163, 224, 0.04) 1px, transparent 1px);
+}
+
+/* Glassmorphism helpers for IEEE professional aesthetic (subtle, clean, not messy) */
+.glass-nav-light {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-nav-dark {
+  background: rgba(7, 17, 30, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 98, 155, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #07111e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00629b;
+}
+
+@keyframes cinematicPan {
+  0% {
+    transform: scale(1.05) translate(0%, 0%) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.12) translate(-2%, -1.5%) rotate(0.4deg);
+  }
+  50% {
+    transform: scale(1.16) translate(1.5%, -2%) rotate(-0.3deg);
+  }
+  75% {
+    transform: scale(1.1) translate(2%, 1%) rotate(0.2deg);
+  }
+  100% {
+    transform: scale(1.05) translate(0%, 0%) rotate(0deg);
+  }
+}
+
+@keyframes beamSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(150%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes subtleDrift {
+  0%, 100% {
+    transform: scale(1.04) translateY(0);
+  }
+  50% {
+    transform: scale(1.07) translateY(-4px);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-cinematic-pan {
+  animation: cinematicPan 18s ease-in-out infinite alternate;
+}
+
+.animate-beam-sweep {
+  animation: beamSweep 6s ease-in-out infinite;
+}
+
+.animate-subtle-drift {
+  animation: subtleDrift 8s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 25s linear infinite;
+}
+
+/* 3D Falling Letters Animation with physics bounce */
+@keyframes letterDropIn {
+  0% {
+    transform: translateY(-220px) translateZ(120px) rotateX(55deg) rotateY(-15deg) scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(18px) translateZ(25px) rotateX(-12deg) rotateY(4deg) scale(1.06);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-10px) translateZ(10px) rotateX(6deg) rotateY(-2deg) scale(0.97);
+  }
+  85% {
+    transform: translateY(4px) translateZ(5px) rotateX(-3deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-letter-drop-1 {
+  animation: letterDropIn 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+
+.animate-letter-drop-2 {
+  animation: letterDropIn 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s both;
+}
+
+.animate-letter-drop-3 {
+  animation: letterDropIn 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.55s both;
+}
+
+.animate-letter-drop-4 {
+  animation: letterDropIn 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.75s both;
+}
+
+/* 3D Extruded Letter Styling */
+.ieee-3d-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 4.5rem;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem;
+  line-height: 1;
+  color: #ffffff;
+  background: linear-gradient(145deg, #00629B 0%, #002855 55%, #001D3D 100%);
+  border-radius: 0.85rem;
+  border-top: 2px solid rgba(56, 189, 248, 0.8);
+  border-left: 2px solid rgba(56, 189, 248, 0.4);
+  border-bottom: 3px solid #000f24;
+  border-right: 3px solid #001530;
+  box-shadow: 
+    0 18px 30px -5px rgba(0, 40, 85, 0.6),
+    0 8px 12px rgba(0, 98, 155, 0.35),
+    inset 0 2px 4px rgba(255, 255, 255, 0.35),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ieee-3d-letter:hover {
+  transform: translateY(-8px) scale(1.08) rotateX(10deg);
+  box-shadow: 
+    0 24px 40px -5px rgba(0, 98, 155, 0.7),
+    0 0 25px rgba(56, 189, 248, 0.6),
+    inset 0 2px 6px rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 640px) {
+  .ieee-3d-letter {
+    width: 4.5rem;
+    height: 5.75rem;
+    font-size: 3.5rem;
+    border-radius: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ieee-3d-letter {
+    width: 5.25rem;
+    height: 6.75rem;
+    font-size: 4.25rem;
+    border-radius: 1.25rem;
+  }
+}
+
+/* 3D Left-Right Horizontal Oscillating Animation */
+@keyframes floatHorizontalLeftRight {
+  0% {
+    transform: translateX(-50px) translateY(0px) rotateY(-10deg) rotateZ(-1.5deg);
+  }
+  25% {
+    transform: translateX(-20px) translateY(-8px) rotateY(-4deg) rotateZ(-0.5deg);
+  }
+  50% {
+    transform: translateX(50px) translateY(-14px) rotateY(10deg) rotateZ(1.5deg);
+  }
+  75% {
+    transform: translateX(20px) translateY(-6px) rotateY(4deg) rotateZ(0.5deg);
+  }
+  100% {
+    transform: translateX(-50px) translateY(0px) rotateY(-10deg) rotateZ(-1.5deg);
+  }
+}
+
+.animate-float-horizontal {
+  animation: floatHorizontalLeftRight 6.5s ease-in-out infinite;
+}
+
+/* 3D Transform Utilities */
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+.rotate-y-8 {
+  transform: rotateY(8deg);
+}
+
+.rotate-y-\[-8deg\] {
+  transform: rotateY(-8deg);
+}
+
+.rotate-y-\[-20deg\] {
+  transform: rotateY(-20deg);
+}
+
+
+
