@@ -237,16 +237,10 @@ export const Interactive3D: React.FC<Interactive3DProps> = ({ className = '' }) 
       if (isDragging) {
         const deltaX = e.clientX - prevMouseX;
         const deltaY = e.clientY - prevMouseY;
-        targetRotationY += deltaX * 0.008;
-        targetRotationX += deltaY * 0.008;
+        targetRotationY += deltaX * 0.006;
+        targetRotationX += deltaY * 0.006;
         prevMouseX = e.clientX;
         prevMouseY = e.clientY;
-      } else {
-        const rect = container.getBoundingClientRect();
-        const normX = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-        const normY = -((e.clientY - rect.top) / rect.height) * 2 + 1;
-        globeGroup.position.x = normX * 0.15;
-        globeGroup.position.y = normY * 0.15;
       }
     };
 
